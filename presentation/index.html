@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? 'css/print/pdf.css'
+        : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Augmented Reality with JavaScript</h2>
+          <img src="./img/AR_Facts.png" alt="" />
+        </section>
+        <section>
+          <section>
+            <h4>What is AR?</h4>
+            <p>
+              <strong>Augmented reality (AR)</strong> is an interactive
+              experience of a real-world environment where the objects that
+              reside in the real world are enhanced by computer-generated
+              perceptual information, sometimes across multiple sensory
+              modalities, including visual, auditory, haptic, somatosensory and
+              olfactory.
+            </p>
+          </section>
+          <section>
+            <ul>
+              AR can be defined as a system that fulfills three basic features:
+              <li fragment grow>a combination of real and virtual worlds</li>
+              <li fragment>real-time interaction</li>
+              <li fragment>
+                and accurate 3D registration of virtual and real objects
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h4>AR vs VR</h4>
+            <!-- <p>
+              In Virtual Reality (VR), the users' perception of reality is
+              completely based on virtual information. In Augmented Reality (AR)
+              the user is provided with additional computer generated
+              information that enhances their perception of reality. For
+              example, in architecture, VR can be used to create a walk-through
+              simulation of the inside of a new building; and AR can be used to
+              show a building's structures and systems super-imposed on a
+              real-life view.
+            </p>
+            <p>
+              Augmented Reality (AR) differs from Virtual Reality (VR) in the
+              sense that in AR part of the surrounding environment is actually
+              'real' and just adding layers of virtual objects to the real
+              environment. On the other hand, in VR the surrounding environment
+              is completely virtual. A demonstration of how AR layers objects
+              onto the real world can be seen with augmented reality games.
+            </p> -->
+            <img src="./img/e099c-augmented-reality-vs-virtual-reality.jpg" alt="">
+
+          </section>
+          <section>
+            <img src="./img/augmented-vs-virtual-reality.png" alt="">
+          </section>
+          <section>
+            <h4>What is VR?</h4>
+            <p>
+              <strong>Virtual reality (VR)</strong> is a simulated experience
+              that can be similar to or completely different from the real
+              world. Applications of virtual reality can include entertainment
+              (i.e. video games) and educational purposes (i.e. medical or
+              military training).
+            </p>
+            <img src="./img/man-into-virtual-reality-world_shutterstock_519713428-1068x601.jpg" alt="">
+          </section>
+         
+          <section>
+            <p>
+              Currently standard virtual reality systems use either virtual
+              reality headsets or multi-projected environments to generate
+              realistic images, sounds and other sensations that simulate a
+              user's physical presence in a virtual environment.
+            </p>
+            <img src="./img/VR-header-2-1024x448.png" alt="">
+          </section>
+          <section>
+            <h4>Using of VR</h4>
+            <p>
+              Virtual reality is most commonly used in entertainment
+              applications such as video games and 3D cinema. Consumer virtual
+              reality headsets were first released by video game companies in
+              the early-mid 1990s. Beginning in the 2010s, next-generation
+              commercial tethered headsets were released by Oculus (Rift), HTC
+              (Vive) and Sony (PlayStation VR), setting off a new wave of
+              application development. 3D cinema has been used for sporting
+              events, pornography, fine art, music videos and short films. Since
+              2015, roller coasters and theme parks have incorporated virtual
+              reality to match visual effects with haptic feedback.
+            </p>
+            <p>
+              The Augmented/Mixed/Virtual Reality (AR/MR/VR) combo has enjoyed
+              frenetic growth since 2016, coming from a marginal market value of
+              bit more than $6 Billion to one that might reach the $210 Billion
+              in sales (including hardware) by 2022. Of all, Augmented Reality
+              is the one experiencing steady growth.
+            </p>
+          </section>
+          <section>
+            <img src="./img/Diverse-Potential-of-VR-AR-Applications.png" alt="">
+          </section>
+          <section>
+            <p>
+              VR can simulate real workspaces for workplace occupational safety
+              and health purposes, educational purposes, and training purposes.
+              It can be used to provide learners with a virtual environment
+              where they can develop their skills without the real-world
+              consequences of failing. It has been used and studied in primary
+              education, anatomy teaching, military, astronaut training, flight
+              simulators, miner training, architectural design, driver training
+              and bridge inspection.
+            </p>
+          </section>
+        </section>
+        <section>
+          <h4>
+            Becoming JavaScript-Augmented
+          </h4>
+          <p>
+            Before starting, I would suggest to have a look at the several AR
+            platforms and standards. The same technical constraints affecting
+            the industry are also reflected in the AR world. For example, there
+            are several platforms, one for each Big Tech (Google = ARCode, Apple
+            = ARKit, MS = ChakraCore, Facebook = AR Studio, React 360, Mozilla =
+            aframe). After having a quick look at the options, starting fully
+            JavaScript’ed Augmented Reality projects is relatively easy. You can
+            begin by taking any web/app dev framework like Cordova, Ionic, React
+            Native or Vue Native to embed the AR framework of your choice — and
+            deploy 3D assets on top of the real world.
+          </p>
+        </section>
+        <section>
+          <p>If what you want is to deploy on the web using mostly marker-based AR, you could use GitHub repos like AR.js (free), argon.js (free but limited) or awe.js (paid PaaS but with an old GitHub repository still available). There are a few tailored ones that are harder for the novice, many of them focused on things like facial/head recognition (such as tracking.js and headtrackr).</p>
+          <div>
+            <img src="./img/pre/ar.png" alt="">
+            <img src="./img/pre/argon.png" alt="">
+            <img src="./img/pre/awe.png" alt="">
+          </div>
+        </section>
+        <section>
+          <h4>AR js</h4>
+          <p>AR.js is a lightweight library for Augmented Reality on the Web, coming with features like Image Tracking, Location based AR and Marker tracking.</p>
+          <p>To boil it down, it’s essentially a Javascript framework acting as a port of ARToolkit, while leveraging other packages like a-frame and three.js. The goal being augmented reality features directly on web browsers without sacrificing performance. As far as compatibility goes, it works on any browser capable of WebGL + WebRTC.</p>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        hash: true,
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/highlight/highlight.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+        ],
+      });
+    </script>
+  </body>
+</html>
